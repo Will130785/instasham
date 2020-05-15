@@ -4,12 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "node-sass public/stylesheets/scss/main.scss public/stylesheets/css/style.css -w",
+    "devserver": "nodemon src/js/app.js",
+    "start": "npm-run-all --parallel devserver watch:sass"
   },
   "author": "Will Constable",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "sass": "^1.26.5"
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
   }
 }
