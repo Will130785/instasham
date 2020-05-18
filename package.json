@@ -4,17 +4,15 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "watch:sass": "node-sass public/stylesheets/scss/main.scss public/stylesheets/css/style.css -w",
-    "devserver": "nodemon src/js/app.js",
-    "start": "npm-run-all --parallel devserver watch:sass"
+    "start": "nodemon app.js"
   },
   "author": "Will Constable",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.2",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5"
   }
 }

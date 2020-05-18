@@ -1,0 +1,253 @@
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* GLOBAL RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* SET ROOT FONT SIZE */
+    font-size: 62.5%;
+}
+
+body {
+    /* GLOBAL FONT */
+    font-family: sans-serif;
+    background-color: #fafafa;
+}
+
+/* ROOT PAGE STYLING */
+.root-container {
+    /* SET GRID */
+    display: grid;
+    grid-template-rows: auto 10rem;
+    grid-template-columns: 50vw 50vw;
+    padding: 10rem 0;
+}
+
+@media only screen and (max-width: 850px) {
+    .root-container {
+        grid-template-columns: 100vw;
+    }
+}
+
+/* STYLE PHONE IMAGES */
+/* .root-image {
+    
+} */
+
+@media only screen and (max-width: 850px) {
+    .root-image {
+        display: none;
+    }
+}
+
+.image-layout {
+    /* SET IMAGE CONTAINER POSITION */
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+/* PHONE IMAGE STYLES AND SIZING */
+.phone-image {
+    width: 30rem;
+}
+
+.phone-image-1 {
+    position: absolute; /* POSITION PHONES ONTOP OF EACH OTHER */
+    right: 8rem;
+}
+
+.phone-image-2 {
+    z-index: 1;
+    position: relative;
+    top: 1rem;
+}
+
+/* LOGIN SECTION STYLING */
+.root-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 850px) {
+    .root-login {
+        align-items: center;
+    }
+}
+
+/* OVERALL LOGIN CONTAINER */
+.login-container {
+    border: .1rem solid rgba(219, 219, 219, 1);
+    padding: 2rem 4rem;
+    min-width: 35rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+    .login-container {
+        width: 100%;
+        border: none;
+        background-color: #fafafa;
+    }
+}
+
+
+.login-title {
+    /* SET TITLE FONT */
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    margin-bottom: 5rem;
+}
+
+.login {
+    width: 100%;
+}
+
+/* FORM STYLING */
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* SUBMIT BUTTON */
+.submit {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+}
+
+/* REGISTRATION SECTION */
+.register-container {
+    border: .1rem solid rgba(219, 219, 219, 1);
+    padding: 2rem 4rem;
+    min-width: 35rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .register-container {
+        width: 100%;
+        border: none;
+        background-color: #fafafa;
+    }
+}
+
+/* APPSTORE BUTTONS */
+.appstore-container {
+    width: 35rem;
+    padding: 2rem 4rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* @media only screen and (max-width: 450px) {
+    .appstore-container {
+        width: 100%;
+    }
+} */
+
+.appstore-blurb {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appstore-btn {
+    cursor: pointer;
+    display: flex;
+    padding: .5rem;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    border-radius: .5rem;
+}
+
+/* .appstore-btn-2 {
+    position: relative;
+    bottom: 4.55rem;
+    left: 15rem;
+} */
+
+
+.btn-blurb {
+    font-size: 1.6rem;
+    text-align: left;
+    margin-left: .6rem;
+}
+
+.btn-blurb-google {
+    letter-spacing: .0001rem;
+}
+
+.btn-blurb-apple {
+    letter-spacing: .03rem;
+}
+
+.icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #fff;
+}
+
+.small {
+    font-size: 1rem;
+    display: block;
+    text-align: left;
+    margin-left: .1rem;
+}
+
+
+/* ROOT PAGE FOOTER */
+.root-footer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .root-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* LINKS */
+.footer-link {
+    font-size: 1.3rem;
+    margin: 0 .5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #00376b;
+}
+
+/* COPYRIGHT */
+.footer-c {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #8e8e8e;
+}

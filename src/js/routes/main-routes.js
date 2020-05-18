@@ -1,19 +1,21 @@
 const express = require("express");
 let app = express();
 
+app.set("views", "./src/js/views");
+
 //ROOT
 app.get("/", (req, res) => {
-    res.send("Welcome to the login/Register page root page");
+    res.render("root");
 });
 
 //INDEX
 app.get("/posts", (req, res) => {
-    res.send("This will be the user feed and will display posts from users they follow");
+    res.render("posts")
 });
 
 //NEW
 app.get("/posts/new", (req, res) => {
-    res.send("This will be the page to post a new image");
+    res.render("new");
 });
 
 //CREATE
@@ -23,12 +25,12 @@ app.post("/posts", (req, res) => {
 
 //SHOW
 app.get("/posts/:id", (req, res) => {
-    res.send("This will be an individual post and its comments");
+    res.render("show");
 });
 
 //EDIT
 app.get("/posts/:id/edit", (req, res) => {
-    res.send("This will be where you can edit your post");
+    res.render("edit");
 });
 
 //UPDATE
