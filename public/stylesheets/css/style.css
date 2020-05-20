@@ -19,6 +19,11 @@ body {
     background-color: #fafafa;
 }
 
+/* CONTAINER CLASS */
+.container {
+    padding: 0 10rem;
+}
+
 /* ROOT PAGE STYLING */
 .root-container {
     /* SET GRID */
@@ -250,4 +255,71 @@ body {
     font-size: 1.3rem;
     text-transform: uppercase;
     color: #8e8e8e;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAVBRAND STYLING */
+.navbrand {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+/* BRAND LINK */
+.brandlink {
+    color: #000;
+    text-decoration: none;
+}
+
+/* SEARCH BAR STYLING */
+.search-input {
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+}
+
+/* NAV LINK STYLING */
+.navlinks {
+    display: flex;
+}
+
+/* ICONS */
+.nav-icon {
+    fill: #000;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+
+/* PROFILE PIC */
+.profile-pic {
+    height: 2.5rem;
+    width: 2.5rem;
+    rotate: 90deg;
+    border-radius: 50%;
+}
+
+/* POSTS PAGE STYLING */
+.posts-title {
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+    color: #9b9b9b;
+    font-weight: normal;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+}
+
+.image-container img {
+    width: 100%;
 }
